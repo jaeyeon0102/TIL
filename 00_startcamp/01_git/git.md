@@ -14,7 +14,7 @@
 - 모든 기능에 대한 코드 합쳐서 최종 구현
 - 만약 한 기능에 오류 발생 시 해당 버전의 코드에서 수정 진행
 
-![alt text](image.png)
+![alt text](image\image.png)
 
 ## git
 ### 중앙 vs 분산
@@ -22,7 +22,7 @@
 - 버전은 중앙 서버에 저장되고 중앙 서버에서 파일을 가져와 다시 중앙에 업로드
 - 문제 
   - 다른 사용자가 중복된 코드를 수정했을 경우 **충돌 발생**
-![alt text](image-1.png)
+![alt text](image\image-1.png)
 
 2. 분산식
 - 버전을 여러 개의 복제된 저장소에 저장 및 관리
@@ -34,7 +34,7 @@
 
   -> 버전 기록 당시 두 코드에 충돌이 발생한다는 상황만 알게 되고 **원본에 대한 충돌은 발생하지 않음**
 
-![alt text](image-2.png)
+![alt text](image\image-2.png)
 
 ## git의 영역
 1. Working Directory
@@ -65,7 +65,7 @@
 - `git config --global user.name "Your Name"`
 - 개인 계정으로 진행 시 `--local`
 
-![alt text](image-3.png)
+![alt text](image\image-3.png)
 
 - `code ~/.gitconfig` : gitconfig 파일에 들어가서 메일 또는 이름 수정 가능
 
