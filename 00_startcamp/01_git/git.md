@@ -63,6 +63,7 @@
 - `git commit -m "<버전 이름>"` : 버전 만들기  
 - `git config --global user.email "you@example.com"`
 - `git config --global user.name "Your Name"`
+- 개인 계정으로 진행 시 `--local`
 
 ![alt text](image-3.png)
 
@@ -70,4 +71,16 @@
 
 - `git log` : commit한 정보 확인 가능
 
+- `git restore --staged <file>...` : add 파일 취소 명령어
+
+## 원격 저장소
+- 코드와 버전 관리 이력을 온라인 상의 특정 위치에 저장하여 여러 개발자가 협업하고 코드를 공유할 수 있는 저장 공간
+
+- gitLab : private 함의 끝을 달림,,, 
+  - ssafy gitLab은 초대된 사람들만 볼 수 있음
+  - 자신의 것만 볼 수 있음
+- GitHub : public 함
+- Bitbucket
+
+- `git remote add origin https://github.com/jaeyeon0102/TIL.git` : 해당 url을 origin이라고 대체한다.
 
