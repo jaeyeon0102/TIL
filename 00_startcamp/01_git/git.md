@@ -61,6 +61,9 @@
 - `git status` : git의 현재 상태 확인
 
 - `git commit -m "<버전 이름>"` : 버전 만들기  
+
+- **커밋 메시지 상세히, 정확하게 작성**
+
 - `git config --global user.email "you@example.com"`
 - `git config --global user.name "Your Name"`
 - 개인 계정으로 진행 시 `--local`
@@ -73,6 +76,11 @@
 
 - `git restore --staged <file>...` : add 파일 취소 명령어
 
+
+- `git push` : 커밋한 내용 보낼 때
+
+- `git pull` : 커밋한 내용 데려올 때
+
 ## 원격 저장소
 - 코드와 버전 관리 이력을 온라인 상의 특정 위치에 저장하여 여러 개발자가 협업하고 코드를 공유할 수 있는 저장 공간
 
@@ -83,4 +91,16 @@
 - Bitbucket
 
 - `git remote add origin https://github.com/jaeyeon0102/TIL.git` : 해당 url을 origin이라고 대체한다.
+
+
+## 자주하는 실수
+- 과제 하나당 프로젝트 하나 -> 개별로 git으로 관리
+- git 내부 하위 폴더도 서브 모듈로써 git으로 관리 가능
+  - 추가적으로 별도의 원격저장소 관리가 필요함 -> 링크로 변해서 서브 모듈의 원격저장소로 옮겨져서 사용 가능
+  - 현재 싸피에서는 사용 불가
+
+- 문제 발생 시 : git이 존재하는 상위폴더 기준으로 하위 폴더 삭제(밖으로 빼기)
+  - 해당 변경 사항 commit 
+  - 하위 폴더의 git 없애고 다시 폴더 내에 넣기
+  - 결론 : 한 폴더에 git은 하나만.
 
