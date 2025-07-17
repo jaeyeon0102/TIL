@@ -53,7 +53,7 @@
 
 # 실습
 ## git
-- `git init` : 해당 폴더를 깃으로 관리한다. 
+- `git init` : 해당 폴더를 깃으로 관리한다. -> 폴더 완전 처음 만들었을 때에만 사용
 - `git add` : `git add 00_startcamp/01_git/markdown.md `
   - git에 파일 추가하기 
   - 추가한 파일을 수정했을 경우 다시 `git add` 진행
