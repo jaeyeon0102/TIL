@@ -1,3 +1,0 @@
-# 필요한 패키지 목록 (예시)
-tkinter
-pandas

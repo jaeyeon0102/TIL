@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SSAFY 마니또 담당자</title>
+    <style>
+        body { background: #f6f7fb; font-family: 'Segoe UI', Arial, sans-serif; }
+        .container { max-width: 420px; margin: 60px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #ddd; padding: 32px 24px; text-align: center; }
+        .logo { color: #1976d2; font-size: 2.2em; font-weight: bold; margin-bottom: 8px; }
+        .title { font-size: 1.2em; font-weight: bold; margin-bottom: 18px; }
+        .list { text-align: left; margin: 0 auto 18px auto; max-height: 180px; overflow-y: auto; background: #f6f7fb; border-radius: 6px; border: 1px solid #eee; padding: 10px 16px; font-size: 1em; }
+        .btn { background: #ffb347; color: #fff; border: none; border-radius: 6px; padding: 10px 18px; font-size: 1em; cursor: pointer; margin: 10px 0; }
+        .btn:hover { background: #e09e36; }
+        .msg { color: #1976d2; margin: 18px 0 0 0; font-weight: bold; }
+        .back-link { display: block; margin-top: 30px; color: #1976d2; text-decoration: underline; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">SSAFY</div>
+        <div class="title">담당자 화면</div>
+        <div class="list">
+            <b>참가자 명단 ({{ students|length }}명):</b><br>
+            {% for s in students %}{{ s }}{% if not loop.last %}, {% endif %}{% endfor %}
+        </div>
+    {% if results %}
+    <table class="result-table">
+        <tr><th>이름</th><th>비밀친구</th></tr>
+        {% for row in results %}
+        <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td></tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+        <form method="post">
+            <button class="btn" name="assign" type="submit">비밀 친구 랜덤 배정 및 저장</button>
+        </form>
+        {% if msg %}
+            <div class="msg">{{ msg }}</div>
+        {% endif %}
+        <a class="back-link" href="/">뒤로가기</a>
+    </div>
+</body>
+</html>
