@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      border: 1px solid black;
+      position: relative;
+      width: 300px;
+    }
+    .profile{
+      position: relative;
+      width: 100%;
+      
+    }
+    .image{
+      width: 100%;
+    }
+    .name{
+      position: absolute;
+      bottom: 0px;
+      background-color: orange;
+      width: 250px;
+      height: 30px;
+      text-align: center;
+      font-size: 20px;
+      margin-left: 20px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .text{
+      margin: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div  class="container">
+    <div class="profile">
+      <img class="image" src="image.png" alt="Profile Image">
+      <p class="name">Name</p>
+    </div>
+    <p class="text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci unde officiis ad nostrum. Laboriosam mollitia similique provident fuga tenetur saepe sit, amet eaque neque eius quaerat expedita ea illum veniam.</p>
+  </div>
+</body>
+</html>
+
+
+<!-- 나를 소개할 수 있는 간단한 프로필 카드를 만들고자 한다. 
+ 요구 사항을 만족할 수 있도록 CSS를 부여하시오.
+요구사항
+카드의 크기는 자유롭게 구성한다.
+이미지의 크기는 부모 너비와 같은 크기가 되도록 한다.
+부모의 범위를 벗어나서는 안된다.
+이름은 이미지의 위에 겹쳐보이도록 위치를 수정한다.
+부모를 기준으로 아랫쪽 0px에 위치한다.
+그 외 속성은 자유롭게 구성한다.
+ -->
+<!-- 프로필 카드의 전체 크기는 자유롭게 설정한다.
+이미지에는 width: 100%를 적용하여 부모 요소의 너비에 맞추고,
+부모의 범위를 벗어나지 않도록 설정한다.
+
+이름 텍스트는 position: absolute를 활용하여 이미지 위에 겹쳐 보이도록 하며,
+bottom: 0px을 사용해 부모 요소 기준 하단에 위치시킨다.
+
+부모 요소에는 position: relative를 설정하여 자식 요소의 기준을 정의한다.
+
+그 외 배경색, 글꼴, 정렬 등의 속성은 자유롭게 구성하며, 
+시각적 완성도를 고려한다. -->
