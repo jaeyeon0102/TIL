@@ -11,14 +11,13 @@ MovieTheater 클래스의 인스턴스를 생성하여, 영화관 정보를 확�
 
 # 아래에 코드를 작성하시오.
 class MovieTheater:
-    def __init__(self,name, total_seats): 
+    def __init__(self, name, total_seats):
         self.name = name
         self.total_seats = total_seats
-
-    reserved_seats = 0
-
+        self.reserved_seats = 0
+    
     def __str__(self):
-        return self.name    
+        return self.name
 
     
 movie = MovieTheater("메가박스", 200)
@@ -26,4 +25,3 @@ print(movie)
 movie = MovieTheater("CGV", 200)
 
 print(movie)
-
