@@ -10,4 +10,18 @@ for _ in range(10):
     data = [] #2차원 배열을 만들기 위한 리스트
         # 각 공백 기준으로 쪼개진 문자열을 정수로 바꾸기
     data = [list(map(int, input().split())) for _ in range(100)]
-    print(data)
+
+
+    max_sum = 0
+    num3 = 0
+    num4 = 0
+    for i in range(100):
+        num1 = sum(data[i])
+        num2 = sum(data[j][i] for j in range(100))
+        num3 += data[i][i]
+        num4 += data[i][99-i]
+
+        max_sum = max(max_sum, num1, num2)
+    max_sum = max(max_sum, num3, num4)
+
+    print(f"#{tc} {max_sum}")
