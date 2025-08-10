@@ -3,7 +3,7 @@ import sys
 sys.stdin = open('input.txt')
 
 
-def dfs(row, cost):
+def dfs(row, current,cost):
     # 최소 비용
     global min_cost
 
@@ -14,17 +14,17 @@ def dfs(row, cost):
 
     # 결과값 도출 -> 열을 모두 순회했을 때
     if row == N:
-        min_cost = min(cost,min_cost)
+        min_cost = min(cost + board[current][0],min_cost)
         return
     
     
     # 행마다 순회
     for col in range(1,N):
         # 방문을 안했고, col과 row가 동일하지 않을 때
-        if (not visited[col]) and (col != row):
+        if (not visited[col]):
             # 방문
             visited[col] = True
-            dfs(row+1, cost + board[row][col])
+            dfs(row+1, col, cost + board[current][col])
             # 백트래킹
             visited[col] = False
 
@@ -43,7 +43,7 @@ for test_case in range(1,T+1):
     min_cost = 10001
 
     # dfs (시작 열, cost)
-    dfs(0,0)
+    dfs(1,0,0)
 
     # 출력
     print(f"#{test_case} {min_cost}")

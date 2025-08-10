@@ -18,7 +18,6 @@ def comb(arr, n):
     return result  # 최종 조합 리스트 반환
 
 
-print(comb([1, 2, 3,4,5,6], 3))
 
 import sys
 
@@ -27,8 +26,8 @@ sys.stdin = open('input.txt')
 T = int(input())
 
 for test_case in range(1, T+1):
-     N = int(input())
+    N = int(input())
 
-     matrix = [list(map(int, input().split(()))) for _ in range(N)]
+    matrix = [list(map(int, input().split(()))) for _ in range(N)]
 
-     comb(matrix,N//2)
+    comb(matrix,N//2)
