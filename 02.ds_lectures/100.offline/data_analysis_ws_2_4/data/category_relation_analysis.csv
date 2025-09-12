@@ -1,0 +1,10 @@
+PurchaseCategory,SatisfactionCategory,CustomerCount
+High,High,136
+High,Low,136
+High,Medium,167
+Low,High,62
+Low,Low,41
+Low,Medium,78
+Medium,High,124
+Medium,Low,120
+Medium,Medium,136
